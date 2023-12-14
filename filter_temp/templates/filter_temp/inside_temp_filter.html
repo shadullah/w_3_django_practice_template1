@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>this is my inside of filter template</h1>
+    <h3>Mess name: {{name}}</h3>
+    <h3>Member: {{member}}</h3>
+    <p>Rooms: {{living_rooms}}</p>
+    {% for i in fees %}
+    <p>id: {{i.id}}, peoples: {{i.name}}, fees:{{i.fee}} </p>
+    {% endfor %}
+</body>
+</html>
