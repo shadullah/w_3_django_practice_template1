@@ -18,5 +18,13 @@
     {% for i in fees %}
     <p>id: {{i.id}}, peoples: {{i.name}}, fees:{{i.fee}} </p>
     {% endfor %}
+
+    {% comment %} filter data works {% endcomment %}
+    <b>Now we are practicing filtering</b>
+    <h5>{{list}}</h5>
+    <i>My first filtering starts here: </i>{{ list | join:" - " }} 
+    <br>
+    {{living | date:"D d M Y" }}
+    <h1>mess name: {{name | capfirst}}</h1>
 </body>
 </html>
