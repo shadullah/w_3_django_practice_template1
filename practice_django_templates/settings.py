@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-2b0i1swj7t%8=f&^w0^4@#+y$#%upzrwymak6g4*)j$0mex2te
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','.vercel.app', '.now.sh']
+ALLOWED_HOSTS = ['127.0.0.1','localhost','.vercel.app', '.now.sh']
 
 
 # Application definition
@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'practice_django_templates.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': '35c2e31Aeg2A56b-6C325EeecA5gC264',
+        'HOST': 'viaduct.proxy.rlwy.net',
+        'PORT': '48384',
     }
 }
 
@@ -127,3 +131,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 import os
 STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+
